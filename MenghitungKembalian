@@ -1,0 +1,29 @@
+// Nama : 
+// Kelas : 
+
+
+import java.util.Scanner;
+
+public class MenghitungKembalian{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double hargaPerKilo = 28000; 
+        double jumlahTelur, totalBayar, uangDiberikan, uangKembalian;
+
+
+        System.out.print("Masukkan jumlah telur (kg): ");
+        jumlahTelur = input.nextDouble();
+
+       
+        totalBayar = jumlahTelur * hargaPerKilo;
+        System.out.println("Total bayar: " + totalBayar);
+
+      
+        System.out.print("Masukkan uang yang diberikan: ");
+        uangDiberikan = input.nextDouble();
+
+        
+        uangKembalian = uangDiberikan - totalBayar;
+        System.out.println("Uang kembalian: " + uangKembalian);
+    }
+}
